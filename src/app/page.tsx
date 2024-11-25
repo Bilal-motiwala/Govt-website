@@ -1,101 +1,56 @@
-import Image from "next/image";
+import Sec2 from '@/Sec2'
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    <main className='flex flex-col md:flex-row justify-between items-center w-full mt-10 flex-wrap'>
+  
+    <div className='w-1/2'>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <h1 className='whitespace-nowrap text-center text-[2rem] font-extrabold leading-10 tracking-wider text-main sm:leading-none md:text-left lg:text-6xl text-[#044E83] ml-4'>Governor Sindh</h1>
+      <h1 className='whitespace-nowrap text-center text-[1.5rem] font-normal leading-[2rem] tracking-wider text-main sm:text-4xl sm:leading-[3rem] md:text-left lg:left-[2rem]] text-[#044E83] ml-4'>Kamran Khan Tessori</h1>
+      <h1 className='mt-5 whitespace-nowrap text-center text-[1.5rem] font-semibold leading-[2rem] tracking-wider text-sub sm:text-4xl sm:leading-[3rem] md:text-left lg:text-[2.5rem] text-[#2EB6E8] ml-4 '>Certified Cloud Engineer (GenEng)</h1>
+      <h1 className='mt-5 whitespace-nowrap text-center text-[1.5rem] font-semibold leading-[2rem] tracking-wider text-sub sm:text-4xl sm:leading-[3rem] md:text-left lg:text-[2.5rem] text-[#2EB6E8] ml-4 '>Applied Generative AI</h1>
+      <h1 className='mt-5 whitespace-nowrap text-center text-[1.5rem] font-semibold leading-[2rem] tracking-wider text-sub sm:text-4xl sm:leading-[3rem] md:text-left lg:text-[2.5rem] text-[#2EB6E8] ml-4'>Engineer (GenEng)</h1>
+      <br />
+      <p className='my-5 whitespace-nowrap text-center text-[1.25rem] font-extrabold text-main sm:text-2xl md:text-left text-[#044E83] ml-4 mt-3'>Earn up to $5,000 / month</p>
+      <p className='my-5 w-full text-center text-[1.25rem] font-bold tracking-wider text-main sm:text-2xl md:w-[80%] md:text-left text-[#044E83] ml-4 mt-3'>Now admission are open in</p>
+      <p className='my-5 w-full text-center text-[1.25rem] font-bold tracking-wider text-main sm:text-2xl md:w-[80%] md:text-left text-[#044E83] ml-4 mt-3'>Hyderabad</p>
+      <div className='flex justify-between w-96'>
+      <button className='w-full rounded-md bg-main py-3 text-center text-sm font-semibold tracking-wider text-white transition-all hover:transparent-y-1 sm:py-4 sm:text-base md:w-52 ml-4 mt-8 bg-[#044E83]'>Apply Now</button>
+      <div className='text-center flex-col text-xl tracking-widest text-main sm:text-3xl'>
+      <h4 className='font-extrabold text-xl text-[#044E83] ml-4 mt-7 w-40'>562,143</h4>
+      <h4 className='text-center tracking-wider text-main sm:mb-0 sm:text-sm  text-xl text-[#044E83] ml-4 mt-5 w-40'>Accepted Applications</h4>
+      </div>
+      </div>     
     </div>
-  );
+
+    <div className='w-1/2'>
+      <img src="./kamran.png" alt="kamran" className='md: ml-40 h-auto min-w-[800px] lg:w=[600px] mr-10'/>
+    </div>
+      </main>
+
+
+     <main className='relative z-0 w-full overflow-hidden bg-opacity-75 bg-cover __className_092cb9 mt-0 '>
+    <div className='absolute- inset-0 -z-50 h-full w-full bg-zinc-100 bg-opacity-80 '>
+    <div className='h-fit w-full pt-5 md:w-1/2 md:py-10'></div>
+     <div className='z-50 m-auto mt-6 block w-[95%] items-center justify-between md:flex-row lg:w-[90%] xl:w-[1300px]'> 
+    </div> 
+       </div>
+      <br />
+      <div>
+      <h1 className='text-center xl:text-[30px] sm:text-[32px] text-xl sm:leading-[2.5rem] leading-[1.75rem] text-main font-extrabold m-auto md:w-[95%] text-[#044E83]'>Certified Cloud Applied Generative AI Engineer (GenEng) and Solopreneur <br /> Developing Billion-Dollar Valued Developers and Solopreneurs</h1>
+      <p className='px-4 sm:mt-10 mt-7 mb-8 xl:text-[1.2rem] sm:text-[1.2rem] text-[1rem] text-zinc-800 sm:tracking-wider tracking-normal text-justify'>The pace of technological change is accelerating, big players like Microsoft, Amazon, Google, and OpenAI are winning by providing infrastructure, large AI foundation models, frameworks, 3D Metaverse experiences, and massive distribution networks. Solopreneurs trained in this program will win by automating work typically outsourced to employees, by directly connecting to customers by eliminating the middleman, and by developing vertical metaverses, thus paving the way for the first billion-dollar valued solopreneur businesses. This program has the objective to train this new breed of billion-dollar solopreneurs. These solopreneurs will adopt the ultra-lean business model and work independently and will not need to hire employees or other team members.</p>
+    </div>
+    <br />
+    </main>
+
+   <Sec2/>
+
+    
+    </>
+  )
 }
+
+export default page
